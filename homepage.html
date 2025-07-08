@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <style>
+    * {
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      min-height: 100vh;
+      box-sizing: border-box;
+      padding-bottom: 3.5rem;
+    }
+
+    .search-bar {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      margin-bottom: 2rem;
+    }
+
+    .search-bar input[type="text"] {
+      flex: 1;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #009688;
+      border-radius: 8px 0 0 8px;
+      outline: none;
+    }
+
+    .search-bar button {
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background-color: #009688;
+      color: white;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1rem;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    .quick-links a {
+      text-align: center;
+      text-decoration: none;
+      color: #0066cc;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0.5rem;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-user-select: none;
+      user-select: none;
+      outline: none;
+      transition: background 0.2s ease;
+    }
+
+    .quick-links a:focus,
+    .quick-links a:active,
+    .quick-links a:hover {
+      background: white;
+    }
+
+    .quick-links img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 0.5rem;
+      pointer-events: none;
+    }
+
+    footer {
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      background: #fff;
+      border-radius: 8px 8px 0 0;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: #009688;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding-bottom: 5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form class="search-bar" action="https://www.google.com/search" method="GET">
+    <input type="text" name="q" placeholder="Search the web..." />
+    <button type="submit">Search</button>
+  </form>
+
+  <div class="quick-links">
+    <a href="https://www.google.com">
+      <img src="https://cdn.svglogos.dev/logos/google-icon.svg?response-content-disposition=attachment%3Bfilename%3Dgoogle-icon.svg" alt="Google Logo" />
+    </a>
+    <a href="https://www.youtube.com">
+      <img src="https://cdn.svglogos.dev/logos/youtube-icon.svg?response-content-disposition=attachment%3Bfilename%3Dyoutube-icon.svg" alt="YouTube Logo" />
+    </a>
+    <a href="https://www.facebook.com">
+      <img src="https://cdn.svglogos.dev/logos/facebook.svg?response-content-disposition=attachment%3Bfilename%3Dfacebook.svg" alt="Facebook Logo" />
+    </a>
+    <a href="https://www.reddit.com">
+      <img src="https://cdn.svglogos.dev/logos/reddit-icon.svg?response-content-disposition=attachment%3Bfilename%3Dreddit-icon.svg" alt="Reddit Logo" />
+    </a>
+    <a href="https://www.gmail.com">
+      <img src="https://cdn.svglogos.dev/logos/google-gmail.svg?response-content-disposition=attachment%3Bfilename%3Dgoogle-gmail.svg" alt="Google Mail Logo" />
+    </a>
+    <a href="https://chatgpt.com">
+      <img src="https://cdn.svglogos.dev/logos/openai-icon.svg?response-content-disposition=attachment%3Bfilename%3Dopenai-icon.svg" alt="Open AI Logo" />
+    </a>
+  </div>
+
+  <footer>
+  <p style="margin: 0.3rem 0;">Built with ❤️</p>
+  <p style="margin: 0.3rem 0;">
+    <a href="https://www.buymeacoffee.com/daymondevs" target="_blank" style="
+      color: #009688;
+      text-decoration: none;
+    ">DaymonDevs</a> &copy; 2025
+  </p>
+</footer>
+
+</body>
+</html>
